@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua:600&display=swap');
+body{
+	background-image: url(imagenes/fondo.jpg);
+	
+}
+#contenedor{
+	width: 930px;
+	height: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	
+
+}
+header{
+	width:930px;
+	height:156px;
+border-radius:25px 25px 0px 0px;
+box-shadow: 10px 10px 5px #1a091a;
+}
+#titulo{
+	width: 658px;
+	height: 156px;
+	line-height:156px;
+	background-color:#f50707;
+	float: left;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 40px;
+	text-shadow:17px 17px 3px #423e42;
+	color:#fff;
+	text-align: center;
+	border-radius:25px 0px 0px 0px;
+}
+#imagen{
+	width:272px;
+	height:156px;
+	float:right;
+	background-color:#edf72a;
+	background-image:url(imagenes/logo.png);
+	border-radius:0px 25px 0px 0px;
+}
+#m{
+	background-color: #000;
+	height: 62px;
+	border-radius:0px 0px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+nav#menu{
+	width: 750px;
+	height: 156px;
+	
+	font-family: Arial;
+	font-size: 20px;
+	color:#000;
+}
+}
+.menu ul.botonera li{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	display:inline;
+}
+#menu ul.botonera li a{
+	width:150px;
+	height:60px;
+	line-height:50px;
+	background-color:#d12c2c;
+	margin-bottom:1px;
+	display:inline-block;
+	color:#FFf;
+	font-family:'Inknut Antiqua',serif;
+	text-decoration:none;
+	text-align:center;
+	border:1px #4d3836 solid;
+}
+.botonera > li{
+	position:relative;
+	display:inline-block;
+}
+.botonera > li a{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	color:#000;
+    font-family:arial, verdana, tahoma;
+    text-decoration:none;
+}
+#menu ul.botonera li a:hover{
+	background-color:#f78605;
+	display:block;
+	
+	color:#fff;
+font-family:arial,verdana,tahoma;
+}
+.submenu {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.submenu{
+	width:100%;
+	position:absolute;
+	display:none;
+}
+.submenu li a{
+	display:inline-block;
+	padding:15px;
+	color:#fff;
+	font-family:arial,verdana,tahoma;
+	text-decoration:none;
+}
+
+#datos{
+	background-color: #db6f16;
+	border-radius:25px 25px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+#datos:hover{
+	background:-webkit-gradient(radial, 165 0, 65, 220 -257, 618, from(#FFFFFF), to(#FFFF1E))
+}
+#datos h1 {
+	color:#000;
+	font-family: Arial;
+	text-align: center;
+	line-height:70px;
+	font-size: 20px;
+}
+#datos h1:hover{
+	font-family:verdana;
+	font-size:40px;
+	color:#562af7;
+}
+#datos h2{
+	color:#000;
+	font-family:arial;
+	font-size:20px;
+	line-height:70px;
+	text-align:center;
+	
+}
+#datos h2:hover{
+	font-family:verdana;
+	font-size:40px;
+	color:#562af7;
+}
+#datos h3{
+	color:#000;
+	font-family:arial;
+	font-size:20px;
+	line-height:70px;
+	text-align:center;
+}
+#datos h3:hover{
+	font-family:verdana;
+	font-size:40px;
+	color:#562af7;
+}
+#formulario{
+	width: 930px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #db6f16;
+	border-radius:25px 25px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+label{
+	color:#562af7;
+	font-style: oblique;
+	font-size: medium;
+}
+.campo{
+	border: outset 6px #6F7EEB;
+	font-size: 12px;
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.boton{
+	background: rgb(255, 0, 0);
+	border-radius:25px 25px 25px 25px;
+	color: #fff;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.errores{
+	-webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	background: red;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	display: none;
+	font-size: 14px;
+	margin-top: -50px;
+	margin-left: 180px;
+	padding: 10px;
+	position: absolute;
+}
+@media handhel, screen and (min-width:600px)and (max-width:1023px){
+	
+#contenedor{
+	width: 599px;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+	
+
+}
+header{
+	width:599px;
+	height:auto;
+
+}
+#titulo{
+	width: 399px;
+	height: auto;
+	line-height:156px;
+
+}
+#imagen{
+	width:200px;
+	height:156px;
+	float:right;
+	
+}
+#m{
+	width:100%;
+	height: auto;
+	
+}
+nav#menu{
+	width: 50%;
+	height: auto;
+	
+	
+}
+
+}
+@media handhel, screen and(max-width:599px){
+
+#contenedor{
+	width: 90%;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+header{
+	width:90%;
+	height:auto;
+	
+}
+#titulo{
+	width: 90%;
+	height: auto;
+	line-height:156px;
+	
+	  
+}
+
+#imagen{
+	width:30%;
+	height:auto;
+	float:none;
+	background-color:#edf72a;
+	background-image:url(imagenes/logo.png);
+	border-radius:25px 25px 25px 25px;
+
+}
+
+#m{
+	background-color:none;
+	width:100%;
+	height:auto;
+}
+
+nav#menu{
+	width: 70%;
+	height: auto;
+}
+}

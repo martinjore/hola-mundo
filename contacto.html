@@ -1,0 +1,130 @@
+<!Doctype Html>
+<html>
+<head>
+<title>Contacto</title>
+<script src="jquery-3.4.1.min.js" type="text/javascript"></script> 
+<link rel="icon" href="imagenes/favicon.ico">
+<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="contacto.css">
+<meta name="viewport"content="width=device-width , user-escalable initial-scale=1.0 minimun-scale=1.0 maxiumun-scale=1.0">
+<script src="js/estilo.js"></script>
+<script>
+//Expresión para validar un correo electrónico
+	var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+	//Expresión para validar edad de 18 a 60 años
+	var expr2 = /^1[8-9]|[2-5]\d|60$/;
+	$(document).ready(function(){
+		//función click
+		$("#bEnviar").click(function(){
+			//Guardar en variables el valor que tengan las cajas de texto
+			//Por medio de los id's
+			//Y tener mejor manipulación de dichos valores
+			var nombre = $("#itNombre").val();
+			var correo = $("#itMail").val();
+			var asunto = $("#itAsunto").val();
+			var edad = $("#itEdad").val();
+
+			// --- Condicionales anidados ----
+			//Si nombre está vacío
+			//Muestra el mensaje
+			//Con false sale de los if's y espera a que sea pulsado de nuevo el botón de enviar
+			if(nombre == ""){
+				$("#mensaje1").fadeIn("slow");
+				return false;
+			}
+			//en otro caso, el mensaje no se muestra
+			else{
+				$("#mensaje1").fadeOut();
+
+				//Si correo está vacío y la expresión NO corresponde -test es función de JQuery
+				//Muestra el mensaje
+				//Con false sale de los if's y espera a que sea pulsado de nuevo el botón de enviar
+				if(correo == "" || !expr.test(correo)){
+					$("#mensaje2").fadeIn("slow");
+					return false;
+				}
+				else{
+					$("#mensaje2").fadeOut();
+
+					if(asunto == ""){
+						$("#mensaje3").fadeIn("slow");
+						return false;
+					}
+					else{
+						$("#mensaje3").fadeOut();
+
+						if(edad == "" || !expr2.test(edad)){
+                     $("#mensaje4").fadeIn("slow");
+                     
+							return false;
+						}
+					}
+				}
+			}
+
+		});//click
+   });
+  
+</script>
+
+</head>
+<body>
+	<section id="contenedor">
+		<header>
+			<div id="titulo"><a>Galmarino inmobiliaria</a></div>
+			<div id="imagen"></id>
+		</header>
+
+		<section id= "m">
+			<nav id ="menu">
+				<ul class="botonera">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="servicios.html">Servicios</a>
+					<ul class="submenu">
+							<li><a href="alquileres.html">Alquileres</a></li>
+							<li><a href="ventas.html">Ventas</a></li>
+							<li><a href="tasaciones.html">Tasaciones</a></li>
+						</ul>
+					</li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div id="datos">
+				<h1> telefono(0336)4426174
+    			<br>154192007</h1>
+				<h2>Av. Alvarez 105,
+				San Nicolás de Los Arroyos, 
+ 					Buenos Aires.
+				</h2>
+				<h3>jgalmarino@gmail.com</h3>
+			</div>
+		</section>
+	</section>
+	<div ID="formulario">
+	<form id="miFormulario">
+ <center>
+		<label>Nombre:</label><br />
+		<input type="text" id="itNombre" class="campo" /> <br/>
+		<div id="mensaje1" class="errores"> Dame tu nombre</div>
+
+		<label>E-mail:</label><br />
+		<input type="text" id="itMail" class="campo" /> <br/>
+		<div id="mensaje2" class="errores"> Dame un mail correcto</div>
+
+		<label>Asunto:</label><br />
+		<input type="text" id="itAsunto" class="campo" /> <br/>
+		<div id="mensaje3" class="errores"> Agrega un asunto</div>
+
+		<label>Edad:</label><br />
+		<input type="text" id="itEdad" class="campo" /> <br/>
+		<div id="mensaje4" class="errores"> -Edad entre 18 a 60 <br/> -Sólo números</div>
+	</center>
+		<center>
+		<input type="submit" id="bEnviar" value="Enviar datos" class="boton" />
+		</center>
+	</form>
+</div>
+</body>
+</html>

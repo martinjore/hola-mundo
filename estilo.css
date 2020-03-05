@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua:600&display=swap');
+body{
+	background-image: url(imagenes/fondo.jpg);
+	font-family: Calibri;
+    padding: 10px 20px;
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: #ffbd33;
+	padding: 10px;
+	border-radius:0 20px;
+}
+#contenedor{
+	width: 930px;
+	height: 900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+header{
+	width:930px;
+	height:156px;
+	border-radius:25px 25px 0px 0px;
+    box-shadow: 10px 10px 5px #1a091a;
+}
+#titulo{
+	width: 658px;
+	height: 156px;
+	line-height:156px;
+	background-color:#f50707;
+	float: left;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 40px;
+	text-shadow:17px 17px 3px #423e42;
+	color:#fff;
+	text-align: center;
+	 border-radius:25px 0px 0px 0px;  
+}
+
+#imagen{
+	width:272px;
+	height:156px;
+	float:right;
+	background-image:url(imagenes/logo.png);
+	border-radius:0px 25px 0px 0px;
+
+}
+#m{
+	width:930px;
+	background-color: #000;
+	height: 62px;
+	 border-radius:0px 0px 25px 25px;
+	 box-shadow: 10px 10px 5px #1a091a;
+}
+nav#menu{
+	width: 750px;
+	height: 60px;
+	background-color:#000; 
+	font-family: Arial;
+	font-size: 20px;
+	color:#000;
+	border-radius:25px 25px 0px 25px;
+}
+#menu ul.botonera li a{
+	width:150px;
+	height:60px;
+	line-height:50px;
+	background-color:#d12c2c;
+	margin-bottom:1px;
+	display:inline-block;
+	color:#fff;
+	font-family:'Inknut Antiqua',serif;
+	text-decoration:none;
+	text-align:center;
+	border:1px #4d3836 solid;
+	}
+.botonera > li{
+	position:relative;
+	display:inline-block;
+}
+.botonera > li a{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	color:#000;
+    font-family:arial, verdana, tahoma;
+    text-decoration:none;
+}
+#menu ul.botonera li a:hover{
+	background-color:#f78605;
+	display:block;
+	color:#fff;
+	font-family:arial,verdana,tahoma;
+}
+#espacio{
+	height:30px;
+}
+#video{
+	width: 640px;
+	height: 480px;
+background:-webkit-gradient(linear, 80% 20%, 31% 21%, from(#FFFFFF), to(#4FA0DE));
+box-shadow: 10px 10px 5px #1a091a;
+}
+footer {
+	width: 960px;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+	background: #000;
+   
+	clear: left;
+	padding-left: 13px;
+}
+#footer1 p {
+	font-family: Century Gothic, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold; 
+}
+#footer1 p a {
+	color: #FFFFFF; 
+}
+@media handhel, screen and (min-width:600px)and (max-width:1023px)
+{
+	
+#contenedor{
+	width: 599px;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+header{
+	width:599px;
+	height:auto;
+	border-radius:25px 25px 0px 0px;
+    box-shadow: 10px 10px 5px #1a091a;
+
+}
+#titulo{
+	width: 399px;
+	height: 156px;
+	line-height:156px;
+	float: left;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 25px;
+	text-align: center;
+	border-radius:25px 0px 0px 0px;
+	  
+}
+
+#imagen{
+	width:200px;
+	height:156px;
+	float:right;
+	background-image:url(imagenes/apple-icon-precomposed.png);
+	border-radius:1em;
+}
+
+#m{
+	background-color:none;
+	width:100%;
+	height:auto;
+}
+nav#menu{
+	width:50%;
+	height:auto;
+	background-color:none;
+	
+}
+#menu ul.botonera li a{
+	width:100%;
+	height:auto;
+	padding:2em;
+	margin-bottom:0.5;
+	display:block;
+}
+.botonera > li
+{
+	display:block;
+}
+#video{
+	width: 100%;
+	height: auto;
+background:-webkit-gradient(linear, 90% 20%, 31% 21%, from(#FFFFFF), to(#4FA0DE));
+box-shadow: 10px 10px 5px #1a091a;
+}
+
+}
+
+
+@media handhel, screen and(max-width:599px){
+
+#contenedor{
+	width: 90%;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+header{
+	width:90%;
+	height:auto;
+	
+}
+#titulo{
+	width: 90%;
+	height: auto;
+	line-height:156px;
+	
+	  
+}
+
+#imagen{
+	width:30%;
+	height:auto;
+	float:none;
+	background-color:#edf72a;
+	background-image:url(imagenes/logo.png);
+	border-radius:0px 25px 0px 0px;
+
+}
+
+#m{
+	background-color: #000;
+	height: 62px;
+	 border-radius:0px 0px 25px 25px;
+	 box-shadow: 10px 10px 5px #1a091a;
+}
+
+nav#menu{
+	width: 70%;
+	height: auto;
+	
+}
+
+
+#espacio{
+	height:10%;
+}
+#video{
+	width: 50%;
+	height: auto;
+  
+}
+
+}

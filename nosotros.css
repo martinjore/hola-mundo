@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua:600&display=swap');
+body{
+	background-image: url(imagenes/fondo.jpg);
+}
+#contenedor{
+	width: 930px;
+	height: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px 25px 0px 0px;
+
+}
+header{
+	width:930px;
+	height:156px;
+	background-color:#999;
+	border-radius:25px 25px 0px 0px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+#titulo{
+	width: 658px;
+	height: 156px;
+	line-height:156px;
+	background-color:#f50707;
+	float: left;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 40px;
+	text-shadow:17px 17px 3px #423e42;
+	color:#fff;
+	text-align: center;
+	border-radius:25px 0px 0px 0px;
+}
+#imagen{
+	width:272px;
+	height:156px;
+	float:right;
+	background-color:#edf72a;
+	background-image:url(imagenes/logo.png);
+	border-radius:0px 25px 0px 0px;
+}
+nav#menu{
+	width: 750px;
+	height: 158px;
+	font-family: Arial;
+	font-size: 20px;
+	color:#000;
+	border-radius:0px 0px 25px 0px;
+}
+#m{
+	background-color: #000;
+	height: 62px;
+	border-radius:0px 0px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+}
+.menu ul.botonera li{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	display:inline;
+}
+#menu ul.botonera li a{
+	width:150px;
+	height:60px;
+	line-height:50px;
+	background-color:#d12c2c;
+	margin-bottom:1px;
+	display:inline-block;
+	color:#FFf;
+	font-family:'Inknut Antiqua',serif;
+	text-decoration:none;
+	text-align:center;
+	border:1px #4d3836 solid;
+}
+.botonera > li{
+	position:relative;
+	display:inline-block;
+}
+.botonera > li a{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	color:#000;
+    font-family:arial, verdana, tahoma;
+    text-decoration:none;
+}
+#menu ul.botonera li a:hover{
+	background-color:#f78605;
+	display:block;
+	color:#fff;
+font-family:arial,verdana,tahoma;
+}
+.submenu {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.submenu{
+	width:100%;
+	position:absolute;
+	display:none;
+}
+.submenu li a{
+	display:inline-block;
+	padding:15px;
+	color:#fff;
+	font-family:arial,verdana,tahoma;
+	text-decoration:none;
+}
+#contenido{
+	height:50px;
+}
+
+#columna{
+	width: 930px;
+	height: 550px;
+	background-color:#009900 ;
+	float:left;
+	border-radius:25px 25px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+#izquierda{
+	width: 600px;
+	height: 550px;
+	background-color: #db6f16;
+	float: left;
+	border-radius:25px 0px 0px 25px;
+}
+#izquierda p {
+	color:#000;
+	font-family: Arial;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	float: left;
+}
+#derecha {
+	width: 308px;
+	height: 350px;
+	
+	float: right;
+	border-radius:0px 25px 0px 25px;
+
+}
+#foto{
+	width:155px;
+	height:250px;
+	margin-bottom:auto;
+	margin-top:77px;
+	padding:77px;
+	background-color:#999;
+	background-image:url(imagenes/dueño.png);
+	box-shadow: 10px 10px 5px #1a091a;
+	
+}
+@media handhel, screen and (min-width:600px)and (max-width:1023px)
+{
+
+#columna{
+	width:599px;
+	height:auto;
+	background-color:#009900 ;
+	float:left;
+	border-radius:25px 25px 25px 25px;
+	box-shadow: 10px 10px 5px #1a091a;
+}
+#izquierda{
+	width: 399px;
+	height: auto;
+	background-color: #db6f16;
+	float: left;
+	border-radius:25px 0px 0px 25px;
+}
+
+#derecha {
+	width: 200px;
+	height: auto;
+	background-color: #bfe82a;
+	background-image:url(imagenes/dueño);
+	float: right;
+	border-radius:0px 25px 0px 25px;
+}
+
+#foto{
+	width:200px;
+	height:auto;
+	margin-bottom:auto;
+	margin-top:77px;
+	padding:77px;
+	background-color:#999;
+}
+}
+@media handhel, screen and(max-width:599px){
+
+#contenedor{
+	width: 90%;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+header{
+	width:90%;
+	height:auto;
+	
+}
+#titulo{
+	width: 90%;
+	height: auto;
+	line-height:156px;
+	
+	  
+}
+
+#imagen{
+	width:30%;
+	height:auto;
+	float:none;
+	background-color:#edf72a;
+	background-image:url(imagenes/logo.png);
+	border-radius:25px 25px 25px 25px;
+
+}
+
+#m{
+	background-color:none;
+	width:100%;
+	height:auto;
+}
+
+nav#menu{
+	width: 70%;
+	height: auto;
+}
+	
+#columna{
+	width: 94%;
+	padding:3%;
+	height: auto;	
+}
+#izquierda{
+	width: 70%;
+	height: auto;
+	background-color: #db6f16;
+	float: left;
+	border-radius:25px 0px 0px 25px;
+}
+
+#derecha {
+	width: 30%;
+	height: auto;
+	float: right;
+
+}
+#foto{
+	width:50%;
+	border-radius:25px 25px 25px 25px;
+	padding:30px;
+}
+}
